@@ -79,7 +79,7 @@ highlighter.setup({ world })
 highlighter.zoomToSelection = true
 
 const culler = components.get(OBC.Cullers).create(world)
-culler.threshold = 250
+culler.threshold = 5000
 
 world.camera.controls.restThreshold = 0.25
 world.camera.controls.addEventListener("rest", () => {
