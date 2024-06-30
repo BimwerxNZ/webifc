@@ -74,7 +74,7 @@ await ifcLoader.setup();
 const tilesLoader = components.get(OBF.IfcStreamer);
 tilesLoader.url = "../resources/tiles/";
 tilesLoader.world = world;
-tilesLoader.culler.threshold = 1;
+tilesLoader.culler.threshold = 0;
 tilesLoader.culler.maxHiddenTime = 1000;
 tilesLoader.culler.maxLostTime = 40000;
 
@@ -83,7 +83,7 @@ highlighter.setup({ world });
 highlighter.zoomToSelection = true;
 
 const culler = components.get(OBC.Cullers).create(world);
-culler.threshold = 1;
+culler.threshold = 0;
 
 world.camera.controls.restThreshold = 0.25;
 world.camera.controls.addEventListener("rest", () => {
