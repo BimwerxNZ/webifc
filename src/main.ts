@@ -99,7 +99,7 @@ fragments.onFragmentsLoaded.add(async (model) => {
 
   for (const fragment of model.items) {
     world.meshes.add(fragment.mesh);
-    culler.add(fragment.mesh);
+    //culler.add(fragment.mesh);
   }
 
   world.scene.three.add(model);
